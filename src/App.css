@@ -1,0 +1,143 @@
+.todo-app {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-form input,
+.todo-form textarea {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.todo-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.todo-card {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.todo-card.completed {
+  background-color: #e6f7e9;
+}
+
+.todo-card.not-completed {
+  background-color: #fff3e2;
+}
+
+.todo-card h3 {
+  margin-bottom: 10px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.btn-group button {
+  margin-right: 10px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-group button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .todo-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .todo-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .todo-card {
+    flex-basis: calc(100% - 20px);
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+  
+  .todo-form input,
+  .todo-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .todo-form button {
+    width: 100%;
+  }
+}
